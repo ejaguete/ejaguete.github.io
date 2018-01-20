@@ -1,0 +1,90 @@
+body {
+    background:#212121;
+    color:#fff;
+    margin:0;
+}
+
+/* ============================= */
+/* ======= SIDEBAR STUFF ======= */
+/* ============================= */
+#sidebar {
+    background: #111111;
+    float:left;
+    position:fixed;
+    top:0;
+    width:280px;
+    height:100vh;
+    padding:0 20px 0 20px;
+}
+
+#sidebar .title {
+    color:#fff;
+    font-family: 'Yesteryear', cursive;
+    font-size:50px;
+    text-align: center;
+    padding-top:30px;
+}
+
+#sidebar .desc {
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:20px;
+}
+
+#sidebar-nav {
+   /* background:red;*/
+    width:260px;
+    min-height:100px;
+    margin:auto;
+    padding:5px 10px 0 0;
+}
+
+#sidebar-nav .title {
+    color:#fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 30px;
+    text-align: left;
+}
+
+#sidebar-nav .item {
+    /*background:#0000ff;*/
+    color:#999;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding:0 0 5px 15px;
+}
+
+#sidebar-nav .item a {
+    color: #999;
+    text-decoration: none;
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+}
+#sidebar-nav .item a:hover {
+    color: #fff;
+}
+
+/* ============================= */
+/* ======= CONTENT STUFF ======= */
+/* ============================= */
+#content {
+    background: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    height:100vh;
+    margin-left:300px;
+    padding:0 20px 0 20px;
+}
+
+#content-post {
+    background: aquamarine;
+    color: #111111;
+}
+
+#content-title {
+    background: cadetblue;
+    color: #111111;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size:50px;
+    padding:40px;
+}
