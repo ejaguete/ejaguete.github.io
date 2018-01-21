@@ -148,6 +148,21 @@ table#links td:last-child:after {
     padding-left:15px;
 }
 
+table#toc td:nth-child(1) {
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+table#toc td:nth-child(1):after {
+    content:", ";
+    font-weight:normal;
+    padding-right:25px;
+}
+
+table#toc td:nth-child(2) {
+    text-align:right;
+}
+
 table#recipecreators {
     padding:10px 0;
     margin:auto;
