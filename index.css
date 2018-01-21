@@ -141,11 +141,11 @@ table#links td {
 
 table#links td:after {
     content:"·";
-    padding-left:10px;
+    padding-left:15px;
 }
 table#links td:last-child:after {
     content:"";
-    padding-left:10px;
+    padding-left:15px;
 }
 
 table#recipecreators {
