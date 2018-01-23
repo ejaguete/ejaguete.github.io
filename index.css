@@ -2,6 +2,26 @@ body {
     margin:0;
 }
 
+p {
+    margin:0;
+    padding:0;
+}
+
+td {
+    width:1px;
+    white-space:nowrap;
+}
+
+ol {
+    margin:0;
+    padding:0;
+}
+
+ul {
+    margin:0;
+    padding:0;
+}
+
 /* ============================= */
 /* ======= SIDEBAR STUFF ======= */
 /* ============================= */
@@ -18,7 +38,7 @@ body {
 #sidebar .title {
     color:#fff;
     font-family: 'Yesteryear', cursive;
-    font-size:60px;
+    font-size:2.7em;
     text-align: center;
     padding-top:30px;
 }
@@ -26,7 +46,7 @@ body {
 #sidebar .desc {
     color: #fff;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size:22px;
+    font-size:1em;
 }
 
 #sidebar-nav {
@@ -40,13 +60,13 @@ body {
 #sidebar-nav .title {
     color:#fff;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 40px;
+    font-size: 2em;
     text-align: left;
 }
 
 #sidebar-nav .item {
     color:#999;
-    font-size:22px;
+    font-size:1em;
     font-family: 'Open Sans Condensed', sans-serif;
     padding-bottom:5px;
 }
@@ -72,11 +92,16 @@ body {
     background: #fff;
     color: #444;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size:22px;
+    font-size:1em;
     min-height:100vh;
     margin-left:300px;
     padding:0 20px 40px 40px;
     overflow: auto;
+}
+
+#content p {
+    margin:0;
+    padding-bottom:1em;
 }
 #content a {
     color: #444;
@@ -87,63 +112,19 @@ body {
 
 /* title of page */
 #content-title {
-    //background: cadetblue;
-    font-size:70px;
-    margin: 10px 0 -15px 50px;
-}
-
-#content-title:after {
-    content: "";
-    background: url("Assets/title_border.png")  no-repeat;
-    width:1284px;
-    height:34px;
+    font-size:3.5em;
+    margin: 10px;
+    border-style: solid;
+    border-width: 18px 17px 32px 39px;
+    -moz-border-image: url("Assets/title_border2.png") 18 17 32 39 repeat;
+    -webkit-border-image: url("Assets/title_border2.png") 18 17 32 39 repeat;
+    -o-border-image: url("Assets/title_border2.png") 18 17 32 39 repeat;
+    border-image: url("Assets/title_border2.png") 18 17 32 39 fill repeat;
     display:block;
-    margin-left:-40px;
-    margin-top:-10px;
+    width:65vw;
 }
 
-/* container to left of sidebar */
-.post {
-    background: #eff2f2;
-    margin-top:30px;
-    margin-left:25px;
-    padding:20px 30px;
-    width: 1200px;
-}
-
-.post img {
-    border: #fff solid 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-left:auto;
-    margin-right:auto;
-    display:block;
-    width:50vh;
-}
-
-.post-title {
-    font-size:40px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.post-content {
-    padding:0 20px 0 20px;
-}
-
-/* last post container - has no partition */
-.post-content-l {
-    padding:0 20px 0 20px;
-}
-
-.post-content:after {
-    content:"";
-    background: url("Assets/partition.png") no-repeat;
-    width:1121px;
-    height:16px;
-    display:block;
-    margin:50px auto;
-}
-
+/* links formatted into tables */
 table#links td {
     padding-right:5px;
 }
@@ -158,6 +139,45 @@ table#links td:last-child:after {
     padding-left:15px;
 }
 
+/* container to right of sidebar */
+.post {
+    background: #eff2f2;
+    margin: 30px;
+    padding:20px 30px;
+    width: 63vw;
+}
+
+.post img {
+    display:block;
+}
+
+.post-title {
+    font-size:2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.post-content {
+    margin-bottom:1em;
+    padding-bottom:1.5em;
+    border-style: solid;
+    border-width: 18px 16px 16px;
+    -moz-border-image: url("Assets/partition2.png") 18 16 16 repeat;
+    -webkit-border-image: url("Assets/partition2.png") 18 16 16 repeat;
+    -o-border-image: url("Assets/partition2.png") 18 16 16 repeat;
+    border-image: url("Assets/partition2.png") 18 16 16 repeat;
+}
+
+/* last post container - has no partition */
+.post-content-l {
+    padding:0 20px 0 20px;
+}
+
+/* ====================================== */
+/* ======= TABLE OF CONTENT STUFF ======= */
+/* ====================================== */
+
+/* TOC : recipe names */
 table#toc td:nth-child(1) {
     font-weight:bold;
     text-transform: uppercase;
@@ -169,9 +189,14 @@ table#toc td:nth-child(1):after {
     padding-right:25px;
 }
 
+/* TOC : recipe creators */
 table#toc td:nth-child(2) {
     text-align:right;
 }
+
+/* ============================= */
+/* ======= CREDITS STUFF ======= */
+/* ============================= */
 
 table#recipecreators {
     padding:10px 0;
@@ -179,7 +204,8 @@ table#recipecreators {
 }
 
 table#recipecreators td {
-    min-width:200px;
+    border:solid black 1px;
+    padding: 0 1em;
     text-align:left;
 }
 
@@ -188,9 +214,14 @@ table#shoutouts td {
     text-align:left;
 }
 
+#recipe img {
+    border: #fff solid 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 #recipe-title {
     font-family: 'Yesteryear', cursive;
-    font-size: 50px;
+    font-size: 2.5em;
 }
 
 #recipe-title:after {
@@ -208,7 +239,7 @@ table#shoutouts td {
 }
 
 table#recipe-info td {
-    font-size:18px;
+    font-size:1em;
     padding-right:10px;
 }
 
@@ -241,6 +272,19 @@ table#recipe-info td:nth-child(3):before {
     padding:0 100px 40px 100px;
 }
 
+#recipe-ingredients {
+    background: red;
+    width:50vh;
+    height:200px;
+    font-size:0.9em;
+}
+
+.recipe-img {
+    float:right;
+    width:50vh;
+    margin: 0 0 10px 10px;
+}
+
 table#ingredients {
     margin-bottom:50px;
 }
@@ -262,7 +306,7 @@ li {
 }
 
 #recipe-credits {
-    font-size:20px;
+    font-size:1em;
 }
 
 
