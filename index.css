@@ -139,7 +139,10 @@ table#links td:last-child:after {
     padding-left:15px;
 }
 
-/* container to right of sidebar */
+/* ========================== */
+/* ======= POST STUFF ======= */
+/* ========================== */
+
 .post {
     background: #eff2f2;
     margin: 30px;
@@ -203,8 +206,14 @@ table#recipecreators {
     margin:auto;
 }
 
+table#recipecreators tr {
+    float:left;
+    width:100%;
+}
+
 table#recipecreators td {
-    border:solid black 1px;
+    //border:solid black 1px;
+    width:100%;
     padding: 0 1em;
     text-align:left;
 }
@@ -213,6 +222,11 @@ table#shoutouts td {
     min-width:200px;
     text-align:left;
 }
+
+table#shoutouts td:after {
+
+}
+
 
 #recipe img {
     border: #fff solid 20px;
