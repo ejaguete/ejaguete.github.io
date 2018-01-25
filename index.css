@@ -2,25 +2,6 @@ body {
     margin:0;
 }
 
-p {
-    margin:0;
-    padding:0;
-}
-
-td {
-    width:1px;
-    white-space:nowrap;
-}
-
-ol {
-    margin:0;
-    padding:0;
-}
-
-ul {
-    margin:0;
-    padding:0;
-}
 
 /* ============================= */
 /* ======= SIDEBAR STUFF ======= */
@@ -47,14 +28,14 @@ ul {
     color: #fff;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size:1em;
+    text-align:center;
 }
 
 #sidebar-nav {
-   //background:red;
     width:260px;
     min-height:100px;
     margin:auto;
-    padding:5px 10px 0 0;
+    padding:5px 10px 0 10px;
 }
 
 #sidebar-nav .title {
@@ -71,8 +52,15 @@ ul {
     padding-bottom:5px;
 }
 
+#sidebar-nav .item:before {
+    font-family: "FontAwesome", sans-serif;
+    content:"\f105";
+    padding-right:1em;
+}
+
 #sidebar-nav .item a {
     color: #999;
+    text-shadow: 5px 5px 5px #111;
     text-decoration: none;
     -webkit-transition: color 0.5s ease-out;
     -moz-transition: color 0.5s ease-out;
@@ -125,12 +113,17 @@ ul {
 }
 
 /* links formatted into tables */
+table#links {
+    margin-left:auto;
+    margin-right:auto;
+}
+
 table#links td {
     padding-right:5px;
 }
 
 table#links td:after {
-    content:"·";
+    content:"\2027";
     padding-left:15px;
 }
 
@@ -161,6 +154,7 @@ table#links td:last-child:after {
 }
 
 .post-content {
+    overflow:hidden;
     margin-bottom:1em;
     padding-bottom:1.5em;
     border-style: solid;
@@ -171,9 +165,16 @@ table#links td:last-child:after {
     border-image: url("Assets/partition2.png") 18 16 16 repeat;
 }
 
-/* last post container - has no partition */
-.post-content-l {
-    padding:0 20px 0 20px;
+.note {
+    margin:1em 0 1em 2em;
+    padding-left:1em;
+    font-style: italic;
+    border-left: #444 3px solid;
+}
+
+.note:before {
+    content: "\203B  ";
+    font-style: normal;
 }
 
 /* ====================================== */
@@ -227,38 +228,35 @@ table#shoutouts td:after {
 
 }
 
+/* ============================ */
+/* ======= RECIPE STUFF ======= */
+/* ============================ */
 
-#recipe img {
-    border: #fff solid 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 #recipe-title {
+    margin-top:-18px;
     font-family: 'Yesteryear', cursive;
     font-size: 2.5em;
+    border-style: solid;
+    border-width: 18px 16px 16px;
+    -moz-border-image: url("../SENG513A1/Assets/partition2.png") 18 16 16 repeat;
+    -webkit-border-image: url("../SENG513A1/Assets/partition2.png") 18 16 16 repeat;
+    -o-border-image: url("../SENG513A1/Assets/partition2.png") 18 16 16 repeat;
+    border-image: url("../SENG513A1/Assets/partition2.png") 18 16 16 repeat;
 }
 
-#recipe-title:after {
-    content:"";
-    background: url("Assets/partition.png") no-repeat;
-    width:1121px;
-    height:16px;
-    display:block;
-    margin:0 auto;
+/* contains active, total cooking time, servings */
+#recipe-info {
+    font-size:1em;
 }
 
-.recipe-subtitle {
-    font-weight:bold;
-    margin-bottom:0;
-}
 
 table#recipe-info td {
-    font-size:1em;
     padding-right:10px;
 }
 
 table#recipe-info td:after {
-    content:"·";
+    content:"\2027";
     padding-left:15px;
 }
 
@@ -279,44 +277,72 @@ table#recipe-info td:nth-child(3):before {
     content: "Serves ";
 }
 
+/* para about recipe */
 #recipe-blurb {
-    font-weight:bold;
-    font-style: italic;
-    text-align:center;
-    padding:0 100px 40px 100px;
+    display:block;
+    margin: 20px 0;
 }
 
-#recipe-ingredients {
-    background: red;
-    width:50vh;
-    height:200px;
-    font-size:0.9em;
+#recipe-blurb p {
+    font-size:1em;
+    font-weight:bold;
+    font-style: italic;
+    text-align: center;
 }
 
 .recipe-img {
-    float:right;
-    width:50vh;
-    margin: 0 0 10px 10px;
+    width:70%;
+    border: solid white 10px;
+    margin: 20px auto 20px auto;
+}
+
+#recipe-ingredients {
+    margin-bottom:20px;
+}
+
+#recipe-ingredients h1 {
+    font-size:1em;
+    margin:0;
+    text-transform: uppercase;
+    font-weight:bold;
 }
 
 table#ingredients {
-    margin-bottom:50px;
+    font-size:0.9em;
+}
+table#ingredients td {
+    vertical-align: top;
+    //border:1px black solid;
 }
 
-table#ingredients td:nth-child(1) {
-    text-align:center;
+#recipe-ingredients dl {
+    list-style-type: none;
+    padding:0;
+    margin:0 3em 0 0;
 }
 
-table#ingredients td:nth-child(2) {
-    padding-right:40px;
+#recipe-ingredients dd:before {
+    content:"\203B  ";
+    margin-left:-1em;
 }
 
-ol {
-    margin-left:-25px;
+.recipe-instructions h1 {
+    font-size:1em;
+    margin:0;
+    text-transform: uppercase;
+    font-weight:bold;
 }
-li {
-    padding-left:25px;
-    padding-bottom:20px;
+
+
+.recipe-instructions ol {
+    margin: .5em 0 .5em -1em;
+}
+.recipe-instructions li {
+    padding-left:.5em;
+    padding-bottom:1em;
+}
+.recipe-instructions li:last-child {
+    padding-bottom:0;
 }
 
 #recipe-credits {
