@@ -132,6 +132,19 @@ table#links td:last-child:after {
     padding-left:15px;
 }
 
+
+.note {
+    margin:1em 0 1em 2em;
+    padding-left:.5em;
+    font-style: italic;
+    border-left: #444 3px solid;
+}
+
+.note:before {
+    content: "\203B  ";
+    font-style: normal;
+}
+
 /* ========================== */
 /* ======= POST STUFF ======= */
 /* ========================== */
@@ -165,17 +178,6 @@ table#links td:last-child:after {
     border-image: url("Assets/partition2.png") 18 16 16 repeat;
 }
 
-.note {
-    margin:1em 0 1em 2em;
-    padding-left:1em;
-    font-style: italic;
-    border-left: #444 3px solid;
-}
-
-.note:before {
-    content: "\203B  ";
-    font-style: normal;
-}
 
 /* ====================================== */
 /* ======= TABLE OF CONTENT STUFF ======= */
@@ -202,30 +204,13 @@ table#toc td:nth-child(2) {
 /* ======= CREDITS STUFF ======= */
 /* ============================= */
 
-table#recipecreators {
-    padding:10px 0;
-    margin:auto;
-}
-
-table#recipecreators tr {
-    float:left;
-    width:100%;
-}
-
-table#recipecreators td {
-    //border:solid black 1px;
-    width:100%;
-    padding: 0 1em;
-    text-align:left;
+table#shoutouts {
+    margin-bottom:1em;
 }
 
 table#shoutouts td {
     min-width:200px;
     text-align:left;
-}
-
-table#shoutouts td:after {
-
 }
 
 /* ============================ */
@@ -310,9 +295,9 @@ table#recipe-info td:nth-child(3):before {
 table#ingredients {
     font-size:0.9em;
 }
+
 table#ingredients td {
     vertical-align: top;
-    //border:1px black solid;
 }
 
 #recipe-ingredients dl {
@@ -326,13 +311,16 @@ table#ingredients td {
     margin-left:-1em;
 }
 
+.recipe-instructions {
+    margin-bottom: 1.5em;
+}
+
 .recipe-instructions h1 {
     font-size:1em;
     margin:0;
     text-transform: uppercase;
     font-weight:bold;
 }
-
 
 .recipe-instructions ol {
     margin: .5em 0 .5em -1em;
