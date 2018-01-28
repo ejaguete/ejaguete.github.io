@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>FFXV Unofficial Cookbook</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <link rel="stylesheet" href="index.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,7 +13,7 @@
 <body>
 <!-- sidebar -->
 <div id="sidebar">
-    <div class="title">That's It !</div>
+    <div class="title">That's It!</div>
     <!-- description -->
     <div class="desc">
         <p>This is a website version of the <i>Unofficial FFXV Cookbook</i> compiled by the community of <i>Final Fantasy 15</i> lovers.</p>
@@ -28,10 +25,10 @@
         <div class="title">
             Navigation
         </div>
-        <div class="item"><a href="../SENG513A1/index.html">Index</a></div>
-        <div class="item"><a href="../SENG513A1/tableofcontents.html">Table of Contents</a></div>
-        <div class="item"><a href="https://drive.google.com/file/d/0B7FEbK4ZHcEcSS1sS2lnWGZLd0E/view">The Cookbook (PDF Version)</a></div>
-        <div class="item"><a href="../SENG513A1/credits.html">Credits</a></div>
+        <div class="item"><a class="local-link" href="index.html">Index</a></div>
+        <div class="item"><a class="local-link" href="tableofcontents.html">Table of Contents</a></div>
+        <div class="item"><a href="https://drive.google.com/file/d/0B7FEbK4ZHcEcSS1sS2lnWGZLd0E/view" target="_blank">The Cookbook (PDF Version)</a></div>
+        <div class="item"><a class="local-link" href="credits.html">Credits</a></div>
     </div>
     <!-- end navigation -->
 </div>
@@ -60,13 +57,13 @@
         <div class="post-title">Comments? Suggestions? Want to Submit a Recipe for V4?</div>
         <div class="post-content">
             <p>Awesome. Message me directly for more details!</p>
-            <table id="links">
+            <table class="links">
                 <tr>
-                    <td><i class="fa fa-reddit-alien fa-fw"></i> <a href="https://www.reddit.com/user/aranea_highwind">aranea_highwind</a></td>
-                    <td><i class="fa fa-instagram fa-fw"></i> <a href="http://instagram.com/cookingwithignis">cookingwithignis</a></td>
-                    <td><i class="fa fa-tumblr fa-fw"></i> <a href="http://cooking--with--iggy.tumblr.com/">cooking--with--iggy</a></td>
-                    <td><i class="fa fa-twitter fa-fw"></i> <a href="http://twitter.com/cookingwithiggy">cookingwithiggy</a></td>
-                    <td><i class="fa fa-facebook fa-fw"></i> <a href="http://facebook.com/ffxvcookbook">ffxvcookbook</a></td>
+                    <td><a class="reddit" href="https://www.reddit.com/user/aranea_highwind">Aranea_Highwind</a></td>
+                    <td><a class="instagram" href="http://instagram.com/cookingwithignis">cookingwithignis</a></td>
+                    <td><a class="tumblr" href="http://cooking--with--iggy.tumblr.com/">cooking--with--iggy</a></td>
+                    <td><a class="twitter" href="http://twitter.com/cookingwithiggy">cookingwithiggy</a></td>
+                    <td><a class="facebook" href="http://facebook.com/ffxvcookbook">ffxvcookbook</a></td>
                 </tr>
             </table>
         </div>
@@ -74,7 +71,7 @@
         <div class="post-title">Cooked a recipe in this cookbook? Want to share?</div>
         <div class="post-content">
             <p>Sweet! Consider</p>
-            <ol>
+            <ol style="margin:0;">
                 <li><p>posting it to <a href="http://reddit.com/r/cookingwithignis">/r/CookingWithIgnis</a> for the Reddit karma and/or</p></li>
                 <li>sharing on social media! <b>#ffxvcookbook</b></li>
             </ol>
@@ -84,14 +81,14 @@
         <div class="post-content">
             <p>Me too! Many contributers cook regularly and have social media accounts that you can (and should) follow! More info is included in each recipe page for your convenience.</p>
             <img style="display:block;margin-left:auto; margin-right:auto;" src="Assets/recipeh.png" />
-            <p style="font-family: 'Yesteryear', cursive; font-size:40px;margin:0;" align="center">"That's it! I've come up with a new recipeh!!!"</p>
-            <p align="center" style="margin-bottom:0;">Artwork by:</p>
-            <table id="links">
+            <p style="font-size:40px; font-style:italic; margin-bottom:0;padding-bottom:0;" align="center">"That's it! I've come up with a new recipeh!!!"</p>
+            <table class="links">
                 <tr>
-                    <td><i class="fa fa-twitter fa-fw"></i> <a href="https://twitter.com/Graceful_Art">graceful_art</a></td>
-                    <td><i class="fa fa-tumblr fa-fw"></i> <a href="http://gracefularts.tumblr.com/">gracefularts</a></td>
-                    <td><i class="fa fa-instagram fa-fw"></i> <a href="https://www.instagram.com/gracefulartwork/">gracefulartwork</a></td>
-                    <td><i class="fa fa-facebook fa-fw"></i> <a href="https://www.facebook.com/gracefulartworks/">gracefulartworks</a></td>
+                    <td> Artwork by Gracie</td>
+                    <td><a class="twitter" href="https://twitter.com/Graceful_Art">graceful_art</a></td>
+                    <td><a class="tumblr" href="http://gracefularts.tumblr.com/">gracefularts</a></td>
+                    <td><a class="instagram" href="https://www.instagram.com/gracefulartwork/">gracefulartwork</a></td>
+                    <td><a class="facebook" href="https://www.facebook.com/gracefulartworks/">gracefulartworks</a></td>
                 </tr>
             </table>
         </div>

@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>FFXV Unofficial Cookbook</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <link rel="stylesheet" href="index.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,7 +13,7 @@
 <body>
 <!-- sidebar -->
 <div id="sidebar">
-    <div class="title">That's It !</div>
+    <div class="title">That's It!</div>
     <!-- description -->
     <div class="desc">
         <p>This is a website version of the <i>Unofficial FFXV Cookbook</i> compiled by the community of <i>Final Fantasy 15</i> lovers.</p>
@@ -28,10 +25,10 @@
         <div class="title">
             Navigation
         </div>
-        <div class="item"><a href="../SENG513A1/index.html">Index</a></div>
-        <div class="item"><a href="../SENG513A1/tableofcontents.html">Table of Contents</a></div>
-        <div class="item"><a href="https://drive.google.com/file/d/0B7FEbK4ZHcEcSS1sS2lnWGZLd0E/view">The Cookbook (PDF Version)</a></div>
-        <div class="item"><a href="../SENG513A1/credits.html">Credits</a></div>
+        <div class="item"><a class="local-link" href="index.html">Index</a></div>
+        <div class="item"><a class="local-link" href="tableofcontents.html">Table of Contents</a></div>
+        <div class="item"><a href="https://drive.google.com/file/d/0B7FEbK4ZHcEcSS1sS2lnWGZLd0E/view" target="_blank">The Cookbook (PDF Version)</a></div>
+        <div class="item"><a class="local-link" href="credits.html">Credits</a></div>
     </div>
     <!-- end navigation -->
 </div>
@@ -41,9 +38,10 @@
     <div id="content-title">Table of Contents</div>
     <div class="post">
         <div class="post-content">
+            <img style="float:right; clear:none;" src="../SENG513A1/Assets/ignis_cooking.png" />
             <table id="toc">
                 <tr>
-                    <td><a href="recipes/peppery-daggerquill-rice.html">Peppery Daggerquill Rice</a></td>
+                    <td><a class="local-link" href="recipes/peppery-daggerquill-rice.html">Peppery Daggerquill Rice</a></td>
                     <td>by onionchoppingninja</td>
                 </tr>
                 <tr>
@@ -65,9 +63,9 @@
             </table>
         </div>
     </div>
-    <p>
-        Note: There are a limited amount of recipes here, only for demoing the page.
-    </p>
+    <div class="note">
+        There are a limited amount of recipes here, only for demoing the page.
+    </div>
 </div>
 
 </body>

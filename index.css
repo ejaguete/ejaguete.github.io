@@ -1,6 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
 body {
+    font-family: 'Open Sans Condensed', sans-serif;
     margin:0;
+    font-size:20px;
 }
+
+table {
+    white-space: nowrap;
+}
+
+/* external link icon to all links */
+a:after {
+    font-family: "FontAwesome", sans-serif;
+    font-size:50%;
+    content: "\f08e";
+    vertical-align: super;
+    padding-left:.5em;
+}
+
+/* social media icons */
+a.twitter:before {
+    font-family: "FontAwesome", sans-serif;
+    content: "\f099";
+    padding-right:.2em;
+}
+
+a.tumblr:before {
+    font-family: "FontAwesome", sans-serif;
+    content: "\f174";
+    padding-right:.2em;
+}
+
+a.instagram:before {
+    font-family: "FontAwesome", sans-serif;
+    content: "\f16d";
+    padding-right:.2em;
+}
+
+a.facebook:before {
+    font-family: "FontAwesome", sans-serif;
+    content: "\f230";
+    padding-right:.2em;
+}
+
+a.reddit:before {
+    font-family: "FontAwesome", sans-serif;
+    content: "\f281";
+    padding-right:.2em;
+}
+
+/* remove external link icon from local links */
+a.local-link:after {
+    content:"";
+    padding-left:0;
+}
+
+/* social media formatting */
 
 
 /* ============================= */
@@ -18,7 +75,7 @@ body {
 
 #sidebar .title {
     color:#fff;
-    font-family: 'Yesteryear', cursive;
+    font-family: 'Reenie Beanie', cursive;
     font-size:2.7em;
     text-align: center;
     padding-top:30px;
@@ -26,7 +83,6 @@ body {
 
 #sidebar .desc {
     color: #fff;
-    font-family: 'Open Sans Condensed', sans-serif;
     font-size:1em;
     text-align:center;
 }
@@ -42,13 +98,13 @@ body {
     color:#fff;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 2em;
+    text-transform: uppercase;
     text-align: left;
 }
 
 #sidebar-nav .item {
     color:#999;
     font-size:1em;
-    font-family: 'Open Sans Condensed', sans-serif;
     padding-bottom:5px;
 }
 
@@ -67,6 +123,7 @@ body {
     -o-transition: color 0.5s ease-out;
     transition: color 0.5s ease-out;
 }
+
 #sidebar-nav .item a:hover {
     color: #fff;
 }
@@ -79,7 +136,6 @@ body {
 #content {
     background: #fff;
     color: #444;
-    font-family: 'Open Sans Condensed', sans-serif;
     font-size:1em;
     min-height:100vh;
     margin-left:300px;
@@ -94,8 +150,6 @@ body {
 #content a {
     color: #444;
     text-decoration: none;
-    border-bottom: #444 solid 1px;
-    padding-bottom:1px;
 }
 
 /* title of page */
@@ -113,27 +167,29 @@ body {
 }
 
 /* links formatted into tables */
-table#links {
+table.links {
     margin-left:auto;
     margin-right:auto;
+    padding-bottom:0;
 }
 
-table#links td {
+table.links td {
     padding-right:5px;
 }
 
-table#links td:after {
+table.links td:after {
     content:"\2027";
     padding-left:15px;
 }
 
-table#links td:last-child:after {
+table.links td:last-child:after {
     content:"";
     padding-left:15px;
 }
 
-
+/* notes marked with asterisk */
 .note {
+    display:inline-block;
     margin:1em 0 1em 2em;
     padding-left:.5em;
     font-style: italic;
@@ -167,9 +223,10 @@ table#links td:last-child:after {
 }
 
 .post-content {
+    position:relative;
     overflow:hidden;
     margin-bottom:1em;
-    padding-bottom:1.5em;
+    padding-bottom:1em;
     border-style: solid;
     border-width: 18px 16px 16px;
     -moz-border-image: url("Assets/partition2.png") 18 16 16 repeat;
@@ -183,44 +240,63 @@ table#links td:last-child:after {
 /* ======= TABLE OF CONTENT STUFF ======= */
 /* ====================================== */
 
-/* TOC : recipe names */
-table#toc td:nth-child(1) {
-    font-weight:bold;
-    text-transform: uppercase;
+table#toc {
+    position:absolute;
+    top:0;
+    left:0;
 }
 
-table#toc td:nth-child(1):after {
-    content:", ";
-    font-weight:normal;
-    padding-right:25px;
+/* TOC : recipe names */
+table#toc td:nth-child(1) {
+    font-family: 'Reenie Beanie', cursive;
+    font-weight:bold;
+    text-transform: uppercase;
+    padding-right:2em;
 }
 
 /* TOC : recipe creators */
 table#toc td:nth-child(2) {
+    color:#444;
     text-align:right;
-}
-
-/* ============================= */
-/* ======= CREDITS STUFF ======= */
-/* ============================= */
-
-table#shoutouts {
-    margin-bottom:1em;
-}
-
-table#shoutouts td {
-    min-width:200px;
-    text-align:left;
+    font-style: italic;
+    font-size:.8em;
 }
 
 /* ============================ */
 /* ======= RECIPE STUFF ======= */
 /* ============================ */
 
+.image-right {
+    border: solid white 1em;
+    height:auto;
+    width:300px;
+    margin: 1em;
+    float:right;
+    overflow:hidden;
+    background:#fff;
+}
+
+.image-left {
+    height:300px;
+    width:300px;
+    border: solid white 10px;
+    margin: 1em;
+    float:left;
+    overflow:hidden;
+    backround:#fff;
+}
+
+.caption {
+    font-family: 'Reenie Beanie', cursive;
+    font-size:1.1em;
+    text-align: center;
+    padding-top:0.5em;
+    background:#fff;
+}
 
 #recipe-title {
     margin-top:-18px;
-    font-family: 'Yesteryear', cursive;
+    font-family: 'Reenie Beanie', cursive;
     font-size: 2.5em;
     border-style: solid;
     border-width: 18px 16px 16px;
@@ -233,8 +309,9 @@ table#shoutouts td {
 /* contains active, total cooking time, servings */
 #recipe-info {
     font-size:1em;
+    margin-right:auto;
+    margin-left:auto;
 }
-
 
 table#recipe-info td {
     padding-right:10px;
@@ -262,23 +339,20 @@ table#recipe-info td:nth-child(3):before {
     content: "Serves ";
 }
 
-/* para about recipe */
+/* tidbit about recipe */
 #recipe-blurb {
-    display:block;
-    margin: 20px 0;
+    border: solid white 1em;
+    height:auto;
+    width:80%;
+    margin: 0 auto 1em auto;
+    overflow:hidden;
+    background:#fff;
 }
 
-#recipe-blurb p {
-    font-size:1em;
-    font-weight:bold;
-    font-style: italic;
-    text-align: center;
-}
-
-.recipe-img {
-    width:70%;
-    border: solid white 10px;
-    margin: 20px auto 20px auto;
+#recipe-blurb img {
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;
 }
 
 #recipe-ingredients {
@@ -294,6 +368,7 @@ table#recipe-info td:nth-child(3):before {
 
 table#ingredients {
     font-size:0.9em;
+    margin-left:2em;
 }
 
 table#ingredients td {
@@ -322,8 +397,14 @@ table#ingredients td {
     font-weight:bold;
 }
 
+.recipe-instructions img {
+    max-width:100%;
+    max-height:100%;
+    object-fit: contain;
+}
+
 .recipe-instructions ol {
-    margin: .5em 0 .5em -1em;
+    margin: .5em 0 .5em -0.5em;
 }
 .recipe-instructions li {
     padding-left:.5em;
@@ -336,5 +417,3 @@ table#ingredients td {
 #recipe-credits {
     font-size:1em;
 }
-
-

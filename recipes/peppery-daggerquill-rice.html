@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>FFXV Unofficial Cookbook</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <link rel="stylesheet" href="../index.css">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,7 +13,7 @@
 <body>
 <!-- sidebar -->
 <div id="sidebar">
-    <div class="title">That's It !</div>
+    <div class="title">That's It!</div>
     <!-- description -->
     <div class="desc">
         <p>This is a website version of the <i>Unofficial FFXV Cookbook</i> compiled by the community of <i>Final Fantasy 15</i> lovers.</p>
@@ -28,10 +25,10 @@
         <div class="title">
             Navigation
         </div>
-        <div class="item"><a href="../index.html">Index</a></div>
-        <div class="item"><a href="../tableofcontents.html">Table of Contents</a></div>
-        <div class="item"><a href="https://drive.google.com/file/d/0B7FEbK4ZHcEcSS1sS2lnWGZLd0E/view">The Cookbook (PDF Version)</a></div>
-        <div class="item"><a href="../credits.html">Credits</a></div>
+        <div class="item"><a class="local-link" href="../index.html">Index</a></div>
+        <div class="item"><a class="local-link" href="../tableofcontents.html">Table of Contents</a></div>
+        <div class="item"><a href="https://drive.google.com/file/d/0B7FEbK4ZHcEcSS1sS2lnWGZLd0E/view" target="_blank">The Cookbook (PDF Version)</a></div>
+        <div class="item"><a class="local-link" href="../credits.html">Credits</a></div>
     </div>
     <!-- end navigation -->
 </div>
@@ -51,13 +48,16 @@
                             </tr>
                         </table>
                     </div> <!-- end recipe info -->
-                    <img class="recipe-img" src="../Assets/daggerquill.png" />
+                </div> <!-- end post-content -->
+                <div class="post-content">
                     <div id="recipe-blurb">
-                        <p>The only way to obtain a more authentic version of this classic
-                        Singaporean Hainanese chicken rice dish would be to interrogate
-                        a poor hawker the same way Ignis questioned Caligo. Warning:
-                            this recipe is not for the faint of heart!</p>
-                    </div>
+                        <img src="../Assets/daggerquill.png" />
+                        <div class="caption">The only way to obtain a more authentic version of this classic
+                            Singaporean Hainanese chicken rice dish would be to interrogate
+                            a poor hawker the same way Ignis questioned Caligo.<br/>
+                            Warning: this recipe is not for the faint of heart!</div>
+                    </div> <!-- end recipe-blurb -->
+
                     <div id="recipe-ingredients">
                         <h1>FOR RICE & CHICKEN</h1>
                         <table id="ingredients">
@@ -98,12 +98,20 @@
                                         <dt>salt and sugar to taste</dt>
                                         <dt>chicken skin and fats from 1 chicken</dt>
                                         <dt>coriander/Chinese parsley - 1 sprig per diner</dt>
+                                        <dt>cucumber - 3 slices per diner</dt>
                                     </dl>
                                 </td>
+                            </tr>
+                        </table>
+                    </div> <!-- end recipe-ingredients -->
+
+                    <div id="recipe-ingredients">
+                        <h1>Optional</h1>
+                        <table id="ingredients">
+                            <tr>
                                 <td>
                                     <dl>
-                                        <dt>cucumber - 3 slices per diner</dt>
-                                        <dt>(optional) 1/2 ginger root, minced</dt>
+                                        <dt>1/2 ginger root, minced</dt>
                                         <dt>dark soya sauce (must be the viscous type)</dt>
                                         <dt>1 tbsp regular soy sauce (15mL)</dt>
                                     </dl>
@@ -116,6 +124,12 @@
                         <ol>
                             <li>Let’s set the stock to boil! Blanch the chicken bones with
                                 some hot water, then set it to boil with the mashed ginger.</li>
+                        </ol>
+                        <div class="image-right">
+                            <img src="daggerquill_assets/step1.jpg" />
+                            <div class="caption">Step 1: Blanching the chicken bones</div>
+                        </div>
+                        <ol start="2">
                             <li>Meanwhile, slice the shallots. Put them on a paper towel so
                                 that the juices soak out of the shallots.</li>
                             <li>Heat the cooking oil in a pan, and throw in the shallots. Make
@@ -135,8 +149,7 @@
                             <li>Next, twist the lemongrass till it breaks, tie the pandan into a
                                 knot, and put both in the pot, along with the sliced ginger and
                                 5 tbsp (75mL) of the shallot oil. You will have to remove the
-                                lemongrass and pandan after the rice cooks.
-                                8. Alright, it’s time for the chicken (with skin on)! Season</li>
+                                lemongrass and pandan after the rice cooks.</li>
                             <li>Alright, it’s time for the chicken (with skin on)! Season the
                                 stock with salt and WHITE pepper and then ease the chicken
                                 in. Cook on low heat for 30 mins.</li>
@@ -186,6 +199,20 @@
                         </ol>
                     </div> <!-- end recipe-instructions -->
                 </div> <!-- end post-content-->
+                <div class="post-content">
+                    <div id="recipe-credits">
+                        <table class="links">
+                            <tr>
+                                <td>Creator: onionchoppingninja</td>
+                                <td><a class="tumblr" href="http://onionchoppingninja.tumblr.com/">onionchoppingninja</a></td>
+                                <td><a class="facebook" href="https://www.facebook.com/onionchoppingninja/">onionchoppingninja</a></td>
+                                <td><a class="twitter" href="https://twitter.com/onion_chopping">onion_chopping</a></td>
+                                <td><a class="instagram" href="https://www.instagram.com/onionchoppingninjachef/">onionchoppingninjachef</a></td>
+                                <td><a href="http://onionchoppingninja.tumblr.com/post/161892136978/peppery-daggerquill-rice-from-ffxv-alright-you">Source Post</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
         </div> <!-- end post -->
 </div> <!-- end content -->
 
