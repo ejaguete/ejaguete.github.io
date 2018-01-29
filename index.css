@@ -72,7 +72,7 @@ a.local-link:after {
 /* ======= SIDEBAR STUFF ======= */
 /* ============================= */
 #sidebar {
-    background: #111 url("Assets/sidebarbg.png") no-repeat bottom;
+    background: #111 url("assets/sidebarbg.png") no-repeat bottom;
     float:left;
     position:fixed;
     top:0;
@@ -164,10 +164,10 @@ a.local-link:after {
     margin: 10px;
     border-style: solid;
     border-width: 18px 17px 32px 39px;
-    -moz-border-image: url("Assets/title_border2.png") 18 17 32 39 repeat;
-    -webkit-border-image: url("Assets/title_border2.png") 18 17 32 39 repeat;
-    -o-border-image: url("Assets/title_border2.png") 18 17 32 39 repeat;
-    border-image: url("Assets/title_border2.png") 18 17 32 39 fill repeat;
+    -moz-border-image: url("assets/title_border2.png") 18 17 32 39 repeat;
+    -webkit-border-image: url("assets/title_border2.png") 18 17 32 39 repeat;
+    -o-border-image: url("assets/title_border2.png") 18 17 32 39 repeat;
+    border-image: url("assets/title_border2.png") 18 17 32 39 fill repeat;
     display:block;
     width:65vw;
 }
@@ -236,10 +236,10 @@ table.links td:last-child:after {
     padding-bottom:1em;
     border-style: solid;
     border-width: 18px 16px 16px;
-    -moz-border-image: url("Assets/partition2.png") 18 16 16 repeat;
-    -webkit-border-image: url("Assets/partition2.png") 18 16 16 repeat;
-    -o-border-image: url("Assets/partition2.png") 18 16 16 repeat;
-    border-image: url("Assets/partition2.png") 18 16 16 repeat;
+    -moz-border-image: url("assets/partition2.png") 18 16 16 repeat;
+    -webkit-border-image: url("assets/partition2.png") 18 16 16 repeat;
+    -o-border-image: url("assets/partition2.png") 18 16 16 repeat;
+    border-image: url("assets/partition2.png") 18 16 16 repeat;
 }
 
 
@@ -283,10 +283,10 @@ table#toc td:nth-child(2) {
 }
 
 .image-left {
-    height:300px;
+    height:auto;
     width:300px;
     border: solid #eff2f2 10px;
-    margin: 1em;
+    margin: 1em 2em 1em 1em;
     float:left;
     overflow:hidden;
 }
@@ -301,10 +301,10 @@ table#toc td:nth-child(2) {
     font-size: 2.5em;
     border-style: solid;
     border-width: 18px 16px 16px;
-    -moz-border-image: url("Assets/partition2.png") 18 16 16 repeat;
-    -webkit-border-image: url("Assets/partition2.png") 18 16 16 repeat;
-    -o-border-image: url("Assets/partition2.png") 18 16 16 repeat;
-    border-image: url("Assets/partition2.png") 18 16 16 repeat;
+    -moz-border-image: url("assets/partition2.png") 18 16 16 repeat;
+    -webkit-border-image: url("assets/partition2.png") 18 16 16 repeat;
+    -o-border-image: url("assets/partition2.png") 18 16 16 repeat;
+    border-image: url("assets/partition2.png") 18 16 16 repeat;
 }
 
 /* contains active, total cooking time, servings */
@@ -344,7 +344,7 @@ table#recipe-info td:nth-child(3):before {
 #recipe-blurb {
     border: solid #eff2f2 1em;
     height:auto;
-    width:80%;
+    max-width:80%;
     margin: 0 auto 1em auto;
     overflow:hidden;
 }
@@ -353,6 +353,7 @@ table#recipe-info td:nth-child(3):before {
     max-width:100%;
     max-height:100%;
     object-fit: contain;
+    margin: 0 auto;
 }
 
 #recipe-ingredients {
