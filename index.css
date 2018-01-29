@@ -1,14 +1,22 @@
 
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Roboto:100');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Didact Gothic', sans-serif;
     margin:0;
     font-size:20px;
 }
 
 table {
     white-space: nowrap;
+}
+
+a {
+    font-weight:bold;
+}
+
+ol {
+    list-style: decimal;
 }
 
 /* external link icon to all links */
@@ -82,7 +90,7 @@ a.local-link:after {
 
 #sidebar .desc {
     color: #fff;
-    font-size:1em;
+    font-size:.8em;
     text-align:center;
 }
 
@@ -95,14 +103,14 @@ a.local-link:after {
 
 #sidebar-nav .title {
     color:#fff;
-    font-size: 2em;
+    font-size: 1.5em;
     text-transform: uppercase;
     text-align: left;
 }
 
 #sidebar-nav .item {
     color:#999;
-    font-size:1em;
+    font-size:.8em;
     padding-bottom:5px;
 }
 
@@ -166,6 +174,7 @@ a.local-link:after {
 
 /* links formatted into tables */
 table.links {
+    font-size:0.8em;
     margin-left:auto;
     margin-right:auto;
     padding-bottom:0;
@@ -222,7 +231,7 @@ table.links td:last-child:after {
 
 .post-content {
     position:relative;
-    overflow:hidden;
+    overflow-y:hidden;
     margin-bottom:1em;
     padding-bottom:1em;
     border-style: solid;
@@ -264,30 +273,27 @@ table#toc td:nth-child(2) {
 /* ============================ */
 
 .image-right {
-    border: solid white 1em;
+    border: solid #eff2f2 1em;
     height:auto;
     width:300px;
     margin: 1em;
     float:right;
     overflow:hidden;
-    background:#fff;
+
 }
 
 .image-left {
     height:300px;
     width:300px;
-    border: solid white 10px;
+    border: solid #eff2f2 10px;
     margin: 1em;
     float:left;
     overflow:hidden;
-    background:#fff;
 }
 
 .caption {
-    font-size:1.1em;
     text-align: center;
-    padding-top:0.5em;
-    background:#fff;
+    padding:0.5em 1em 0 1em;
 }
 
 #recipe-title {
@@ -336,12 +342,11 @@ table#recipe-info td:nth-child(3):before {
 
 /* tidbit about recipe */
 #recipe-blurb {
-    border: solid white 1em;
+    border: solid #eff2f2 1em;
     height:auto;
     width:80%;
     margin: 0 auto 1em auto;
     overflow:hidden;
-    background:#fff;
 }
 
 #recipe-blurb img {
@@ -399,7 +404,7 @@ table#ingredients td {
 }
 
 .recipe-instructions ol {
-    margin: .5em 0 .5em -0.5em;
+    margin: .5em 0 .5em 1em;
 }
 .recipe-instructions li {
     padding-left:.5em;
